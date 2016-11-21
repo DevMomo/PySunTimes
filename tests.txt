@@ -1,0 +1,5 @@
+Doctest regression suite for PySunTimes.
+
+>>> import PySunTimes
+>>> PySunTimes.getLon('calgary, AB')
+114.0708459

@@ -1,4 +1,4 @@
-"""This program takes the name of a city as input from the user and returns sunrise and sunset times.
+﻿"""This program takes the name of a city as input from the user and returns sunrise and sunset times.
 Calculation taken from here:
 https://en.wikipedia.org/wiki/Sunrise_equation#Complete_calculation_on_Earth
 """
@@ -37,8 +37,3 @@ def getLon(city):
 
 def meanSolar():
 	"""Returns mean solar time"""
-
-def main():
-	print(getLon('calgary, AB'))
-
-main()
