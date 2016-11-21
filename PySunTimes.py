@@ -6,17 +6,17 @@ import datetime
 import math
 import requests
 
-def julianDay():
+def julianDay(date=None):
 	"""Returns current Julian date"""
 
 	# calculate equation terms
-	today = datetime.datetime.now() # get today's date and time
-	year = today.year
-	month = today.month
-	day = today.day
-	hour = today.hour
-	min = today.minute
-	sec = today.second
+	if date is None: date = datetime.datetime.now() # get today's date and time
+	year = date.year
+	month = date.month
+	day = date.day
+	hour = date.hour
+	min = date.minute
+	sec = date.second
 	a = math.floor((14-month)/12)
 	y = year + 4800 - a
 	m = month + 12*a - 3

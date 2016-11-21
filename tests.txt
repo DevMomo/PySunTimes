@@ -1,5 +1,11 @@
 Doctest regression suite for PySunTimes.
 
 >>> import PySunTimes
+>>> import datetime
+
+>>> PySunTimes.julianDay(datetime.datetime(2010, 1, 1, 0, 0))
+2455198
+
 >>> PySunTimes.getLon('calgary, AB')
 114.0708459
+
